@@ -1,1 +1,17 @@
-<p>ds-t-don works!</p>
+<table class="table table-striped">
+    <thead>
+        <th>Mã thực đơn</th>
+        <th>Tên Thực Đơn</th>
+        <th>Tuỳ Chọn</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of DSThucDon">
+            <td class="">{{item.MaThucDon}}</td>
+            <td class="">{{item.TenThucDon}}</td>
+            <td>
+                <button type="button" class="btn btn-primary mr-1">Sửa</button>
+                <button type="button" class="btn btn-danger mr-1">Xoá</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

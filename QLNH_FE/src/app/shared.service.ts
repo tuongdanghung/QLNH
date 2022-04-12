@@ -46,6 +46,6 @@ export class SharedService {
      }
 
     layDSTenThucDon():Observable<any[]>{
-    return this.http.get<any>(this.APIUrl+'/GetAllTenThucDon')   
+    return this.http.get<any>(this.APIUrl+'/ThucDon/GetAllTenThucDon')   
    }
 }
